@@ -1,0 +1,31 @@
+.list-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1.2rem;
+    border-bottom: 1px dashed seagreen;
+}
+
+.edit{
+    background-color: green;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.edit:hover{
+    background: lightgray;
+    color: green;
+}
+.remove{
+    background-color: red;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.remove:hover{
+    background: lightgray;
+    color: red;
+}
+.clear-btn{
+    background-color: red;
+    margin-top: 1rem;
+    border-radius: 100px;
+    padding: 0.3rem 1rem;
+}
