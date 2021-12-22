@@ -9,6 +9,30 @@
     background-color: green;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    position: relative;
+}
+.edit:hover::before{
+position: absolute;
+top: 0.1rem;
+left: -2.47rem;
+font-size: 3px;
+display:block;
+content: "edit";
+background-color: green;
+border-radius: 0.3rem;
+padding: 0.1rem 0.3rem;
+color: white;
+}
+.edit:hover::after{
+position: absolute;
+top: 0.5rem;
+left: -0.343rem;
+display:block;
+content: " ";
+width: 0;
+height: 0;
+border: 4px solid transparent;
+border-left-color: green;
 }
 .edit:hover{
     background: lightgray;
@@ -18,10 +42,35 @@
     background-color: red;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    position: relative;
 }
 .remove:hover{
     background: lightgray;
     color: red;
+}
+
+.remove:hover::before{
+position: absolute;
+top: 0.1rem;
+right: -3.5rem;
+font-size: 3px;
+display:block;
+content: "delete";
+background-color: red;
+border-radius: 0.3rem;
+padding: 0.1rem 0.3rem;
+color: white;
+}
+.remove:hover::after{
+position: absolute;
+top: 0.5rem;
+right: -0.343rem;
+display:block;
+content: " ";
+width: 0;
+height: 0;
+border: 4px solid transparent;
+border-right-color: red;
 }
 .clear-btn{
     background-color: red;
