@@ -78,3 +78,10 @@ border-right-color: red;
     border-radius: 100px;
     padding: 0.3rem 1rem;
 }
+
+@media (max-width:380px){
+  .list-container{
+    padding: 0.3rem;
+    border-bottom: 1px dashed seagreen;
+}  
+}

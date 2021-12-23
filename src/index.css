@@ -44,3 +44,13 @@ border-top-right-radius: 5px;
   background-color: lightseagreen;
   text-transform: capitalize;
 }
+
+
+@media (max-width:380px){
+  .submit{
+    border-radius: 5px;
+  }
+  .input{
+    border-radius: 5px;
+  }
+}

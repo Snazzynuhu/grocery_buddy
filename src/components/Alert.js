@@ -6,7 +6,7 @@ const Alert = ({type, message, closeAlert}) => {
         closeAlert();
     },2000);
     return ()=> clearTimeout(timeOut);
-   },[])
+   },[closeAlert])
     return (
         <div>
             <p className={ `alert ${type}`}>{message}</p>
