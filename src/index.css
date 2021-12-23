@@ -1,29 +1,70 @@
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-align: center;
 }
-body{
+body {
   position: relative;
 }
-.container{
+.container {
   display: grid;
   place-items: center;
+  position: relative;
 }
-.title{
+.circle1 {
+  position: absolute;
+  top: 0;
+  left: 1.2rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  opacity: 0.5;
+  filter: blur(7px);
+  background-color: purple;
+  animation: bounce 3s linear infinite;
+}
+.circle2 {
+  position: absolute;
+  bottom: -3rem;
+  right: 1.2rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  opacity: 0.5;
+  filter: blur(7px);
+  background-color: cyan;
+  animation: bounce2 3s linear infinite;
+}
+@keyframes bounce{
+  0%, 100%{
+    transform: scale(0.9);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+}
+@keyframes bounce2{
+  0%, 100%{
+    transform: translateY(5rem);
+  }
+  50%{
+    transform: translateY(0);
+  }
+}
+.title {
   text-transform: capitalize;
   background: linear-gradient(purple 20%, lightseagreen);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 2rem;
 }
-.form{
+.form {
   width: 70vw;
   box-shadow: 0px 2px 5px 1px grey;
   padding: 3rem;
 }
-.input{
+.input {
   border: none;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -32,25 +73,24 @@ body{
   padding: 3px 3px 3px 10px;
   text-align: left;
 }
-button{
+button {
   padding: 3px 10px;
   border: none;
   color: whitesmoke;
   cursor: pointer;
 }
-.submit{
-border-top-right-radius: 5px;
+.submit {
+  border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: lightseagreen;
   text-transform: capitalize;
 }
 
-
-@media (max-width:380px){
-  .submit{
+@media (max-width: 380px) {
+  .submit {
     border-radius: 5px;
   }
-  .input{
+  .input {
     border-radius: 5px;
   }
 }

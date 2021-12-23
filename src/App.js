@@ -80,6 +80,8 @@ const App=()=>{
   return (
     <>
     <div className='container'>
+      <div className='circle1'></div>
+      <div className='circle2'></div>
        <h1 className='title'>snazzy grocery buddy</h1>
        {alert.show && <Alert {...alert}closeAlert={closeAlert} />}
    <div className='form'>
