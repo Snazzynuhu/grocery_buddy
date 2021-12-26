@@ -70,12 +70,14 @@ body {
   border-bottom-left-radius: 5px;
   background-color: lightgray;
   width: 70%;
-  padding: 3px 3px 3px 10px;
+  height: 3rem;
+  padding: 3px 3px 5px 10px;
   text-align: left;
 }
 button {
   padding: 3px 10px;
   border: none;
+  height: 3rem;
   color: whitesmoke;
   cursor: pointer;
 }
@@ -86,11 +88,43 @@ button {
   text-transform: capitalize;
 }
 
-@media (max-width: 380px) {
-  .submit {
-    border-radius: 5px;
-  }
-  .input {
-    border-radius: 5px;
-  }
+@media (max-width: 415px) {
+.form {
+  width: 85vw;
+  box-shadow: 0px 2px 5px 1px grey;
+  padding: 3rem;
+}
+.input {
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: lightgray;
+  width: 70%;
+  height: 3rem;
+  padding: 3px 3px 5px 10px;
+  text-align: left;
+}
+button {
+  padding: 3px 10px;
+  border: none;
+  height: 3rem;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.submit {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: lightseagreen;
+  text-transform: capitalize;
+}
+}
+
+
+
+@media (max-width: 360px) {
+.form {
+  width: 90vw;
+  box-shadow: 0px 2px 5px 1px grey;
+  padding: 2rem;
+}
 }
